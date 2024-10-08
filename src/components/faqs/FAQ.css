@@ -1,0 +1,33 @@
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .faq-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: ;
+  }
+  
+  .faq-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #773697; /* your specified color */
+  }
+  
+  .faq-item p {
+    margin: 0;
+    color: #555;
+  }
+  

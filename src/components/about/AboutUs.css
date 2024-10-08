@@ -1,0 +1,209 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+  }
+  
+  /* Container for the page */
+  .about-us-page {
+    padding: 50px;
+  }
+  
+  /* Introduction Section */
+  .about-us-intro {
+    text-align: center;
+    margin: 50px 0;
+    animation: fade-in 1.5s ease-in-out;
+  }
+  
+  .about-us-intro h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .about-us-intro p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+  }
+  
+  /* Values Section */
+  .values-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .value-card {
+    background-color: #111111;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: left;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  .value-card h2 {
+    color: #ffffff;
+    font-size: 24px;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+  }
+  
+  .value-card p {
+    color: #dcdcdc;
+    margin-top: 10px;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Difference Section */
+  .about-us-difference {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .difference-left, .difference-right {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .difference-right img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  /* Impact Section */
+  .impact-heading {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+  
+  .impact-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .impact-card {
+    width: 30%;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .impact-card:hover {
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2);
+  }
+  
+  .impact-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .impact-card p {
+    color: #bfbfbf;
+  }
+  
+  /* Footer */
+  .about-us-footer {
+    background-color: #000000;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .footer-content h2 {
+    font-size: 28px;
+    color: #ffffff;
+  }
+  
+  .footer-content p {
+    max-width: 600px;
+    margin: 20px auto 0;
+    line-height: 1.6;
+    color: #999999;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .value-card, .impact-card, .difference-left, .difference-right {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .value-card, .impact-card, .difference-left, .difference-right {
+      width: 100%;
+    }
+  
+    .about-us-intro h1 {
+      font-size: 36px;
+    }
+  
+    .about-us-intro p {
+      font-size: 16px;
+    }
+  
+    .about-us-difference {
+      flex-direction: column;
+    }
+  
+    .values-container, .impact-cards {
+      flex-direction: column;
+    }
+  
+    .footer-content h2 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us-page {
+      padding: 20px;
+    }
+  
+    .about-us-intro h1 {
+      font-size: 28px;
+    }
+  
+    .about-us-intro p {
+      font-size: 14px;
+    }
+  
+    .value-card h2, .impact-card h3 {
+      font-size: 20px;
+    }
+  
+    .value-card p, .impact-card p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fade-in {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  

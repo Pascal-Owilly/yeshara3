@@ -1,0 +1,125 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Expletus Sans', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.main-info {
+  margin: 100px auto; /* Reduced margin for better control */
+  height: auto; /* Remove fixed height */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 80%; /* Use max-width instead of fixed width */
+}
+
+.main-info h1 {
+  margin: 0;
+  color: #fff !important;
+  font-family: 'Expletus Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 70px;
+  text-transform: uppercase;
+  word-wrap: break-word; /* Prevent text overflow */
+}
+
+.main-info p {
+  margin: 0;
+  color: #fff !important;
+  font-family: 'Expletus Sans', sans-serif;
+}
+
+.main-info #info {
+  width: 100%; /* Make it responsive */
+  margin: 30px 0 15px 0; /* Reduced top margin */
+  color: #eeecec;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 10px;
+  text-align: left; /* Keep text left-aligned */
+}
+
+.main-info p span {
+  color: #f3cbff;
+}
+
+#now {
+  background: #d9d9d9;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-info a {
+  text-decoration: none;
+  border: solid 1px #fff;
+  border-radius: 2px;
+  transition: 100ms;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  padding: 10px 15px; /* Added padding for better sizing */
+  margin-top: 15px;
+  display: inline-block; /* Changed from flex to inline-block */
+}
+
+.main-info a:hover {
+  border-color: #de7cfc;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 1024px) {
+  .main-info {
+    margin: 50px auto; /* Adjusted for medium screens */
+    max-width: 90%; /* Further reduce max-width */
+  }
+
+  .main-info h1 {
+    font-size: 40px; /* Scale down for medium screens */
+    line-height: 55px;
+  }
+
+  .main-info #info {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-info {
+    margin: 30px 20px; /* Further reduced margin */
+  }
+
+  .main-info h1 {
+    font-size: 32px; /* Scale down font size */
+    line-height: 45px;
+  }
+
+  .main-info #info {
+    font-size: 14px; /* Adjust text size */
+    margin: 20px 0; /* Reduce top margin */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-info {
+    margin: 20px 10px; /* Reduce margin for small screens */
+  }
+
+  .main-info h1 {
+    font-size: 28px; /* Further reduce font size */
+    line-height: 40px;
+  }
+
+  .main-info #info {
+    font-size: 12px; /* Further scale down text size */
+    text-align: justify; /* Make text justified */
+  }
+
+  .main-info a {
+    padding: 8px 12px; /* Adjust button size */
+    font-size: 12px;
+  }
+}

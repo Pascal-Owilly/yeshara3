@@ -1,0 +1,74 @@
+/* Navbar.css */
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.center-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  margin: 0 15px; /* Add spacing between nav items */
+}
+
+.navbar-brand {
+  margin-right: 30px; /* Space between logo and links */
+}
+
+.text-white {
+  color: #fff;
+}
+
+.contact-btn {
+  border-radius: 15px !important;
+  box-shadow: 0px 2px 2px #000042;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none; /* Remove border */
+  width: 50px; /* Increase width */
+  height: 50px; /* Increase height */
+  padding: 10px; /* Add padding */
+  background-color: transparent; /* Make background transparent */
+  display: flex; /* Center icon */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+  color: #d9d9d9;
+}
+
+.navbar-toggler-icon {
+  background-color: none; /* Change toggle icon color */
+  color: #d9d9d9;
+
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  display: block;
+  color: wheat; /* Color of the lines */
+  width: 30px; /* Width of the lines */
+  height: 4px; /* Thickness of the lines */
+  margin: 5px auto; /* Space between lines */
+}
+
+/* Media Query for Navbar */
+@media (max-width: 992px) {
+  .center-section {
+    text-align: center; /* Center align nav links on mobile */
+  }
+}
